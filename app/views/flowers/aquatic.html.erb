@@ -1,0 +1,32 @@
+<div class="row" style="margin-top:-30px">
+  <div class="col-lg-12 text-center" style="padding-top:55px">
+    <p style="font-size:50pt">
+      <strong>Flower Finder <i class='fa fa-search'></i> </strong>
+    </p>
+  </div>
+  <h3><strong>Is your flower aquatic?</strong></h3><br>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body text-center">
+            <%= link_to "<span style='font-size:25px;'>Yes</span>".html_safe, show_flower_path(colour: params[:colour],prop: "aquatic"), :class => "btn btn-block btn-default"  %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body text-center">
+            <%= link_to "<span style='font-size:25px;'>No</span>".html_safe, flower_props_path(colour: params[:colour],aqua: "false"), :class => "btn btn-block btn-default"  %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body text-center">
+            <%= link_to "<span style='font-size:25px;'>Not Sure</span>".html_safe, flower_props_path(colour: params[:colour]), :class => "btn btn-block btn-default"  %>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

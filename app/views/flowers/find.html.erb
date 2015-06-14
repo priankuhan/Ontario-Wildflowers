@@ -1,0 +1,59 @@
+<div class="row" style="margin-top:-30px">
+  <div class="col-lg-12 text-center" style="padding-top:55px">
+    <p style="font-size:50pt">
+      <strong>Flower Finder <i class='fa fa-search'></i> </strong>
+    </p>
+  </div>
+  <p>
+    <h3><strong>How many petals does it have?</strong></h3><br>
+  </p>
+
+
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body text-center">
+            <%= link_to "<span style='font-size:25px;'>3 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "3"), :class => "btn btn-block btn-default"  %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body text-center">
+            <%= link_to "<span style='font-size:25px;'>4 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "4"), :class => "btn btn-block btn-default"  %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body text-center">
+            <%= link_to "<span style='font-size:25px;'>5 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "5"), :class => "btn btn-block btn-default"  %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body text-center">
+            <%= link_to "<span style='font-size:25px;'>6 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "6"), :class => "btn btn-block btn-default"  %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body text-center">
+            <%= link_to "<span style='font-size:25px;'>More than 6 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "10"), :class => "btn btn-block btn-default"  %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body text-center">
+            <%= link_to "<span style='font-size:25px;'>Oddly Shaped</span>".html_safe, aquatic_path(colour: params[:colour]), :class => "btn btn-block btn-default"  %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

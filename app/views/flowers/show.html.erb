@@ -1,0 +1,41 @@
+<div class="row" style="margin-top:-30px">
+  <div class="col-lg-12 text-center" style="padding-top:55px">
+    <p style="font-size:50pt">
+      <strong>Flower Finder <i class='fa fa-search'></i> </strong>
+    </p>
+  </div>
+  <div class="row">
+    <h3><%=@message.html_safe%></h3><br>
+  </div>
+  <div class="row">
+    <div class="col-lg-4" >
+      <% @flowers[0,@third].each do |id| %>
+        <%flower = Flower.find(id) %>
+        <div class="panel panel-default">
+          <%= image_tag flower.images, id: "picture",  class: "img-responsive" %>
+          <h1 style="color:#FFFFFF"><%=flower.name%></h1>
+        </div>
+      <%end%>
+    </div>
+    <div class="col-lg-4" >
+      <% @flowers[@third,@third].each do |id| %>
+        <%flower = Flower.find(id) %>
+        <div class="panel panel-default">
+          <%= image_tag flower.images, id: "picture",  class: "img-responsive" %>
+          <h1 style="color:#FFFFFF"><%=flower.name%></h1>
+        </div>
+      <%end%>
+    </div>
+    <div class="col-lg-4" >
+      <% @flowers[@tthird,@third].each do |id| %>
+        <%flower = Flower.find(id) %>
+        <div class="panel panel-default">
+          <%= image_tag flower.images, id: "picture",  class: "img-responsive" %>
+          <h1 style="color:#FFFFFF"><%=flower.name%></h1>
+        </div>
+      <%end%>
+    </div>
+  </div>
+  
+  
+</div>
