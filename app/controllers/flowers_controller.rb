@@ -18,9 +18,15 @@ class FlowersController < ApplicationController
     end
     
     def show
-        petals = 0
-        params[:petals].blank? ? petals = 0 : petals = params[:petals]
-        @flowers = Flower.where("colour='"+params[:colour].to_s+"' OR colour2='"+params[:colour].to_s+"' OR colour3='"+params[:colour].to_s+"'").where("petals='"+petals.to_s+"'").where("prop1='"+params[:prop].to_s+"' OR prop2='"+params[:prop].to_s+"' OR prop3='"+params[:prop].to_s+"'").pluck(:id)
+        if params[:prop].blank? && params[:petals].present?
+            @flowers = Flower.where("colour='"+params[:colour].to_s+"' OR colour2='"+params[:colour].to_s+"' OR colour3='"+params[:colour].to_s+"'").where(petals: params[:petals])
+        elsif params[:search].present?
+            @flowers = Flower.where("name like ?", "%#{params[:search]}%")
+        elsif params[:petals].blank? && params[:prop].blank?
+            @flowers = Flower.where("colour='"+params[:colour].to_s+"' OR colour2='"+params[:colour].to_s+"' OR colour3='"+params[:colour].to_s+"'")
+        else
+            @flowers = Flower.where("colour='"+params[:colour].to_s+"' OR colour2='"+params[:colour].to_s+"' OR colour3='"+params[:colour].to_s+"'").where("prop1='"+params[:prop].to_s+"' OR prop2='"+params[:prop].to_s+"' OR prop3='"+params[:prop].to_s+"'").pluck(:id)
+        end
         
         if @flowers.length > 1
             @third = (@flowers.length/3.0).ceil
@@ -34,9 +40,8 @@ class FlowersController < ApplicationController
             @flowers = []
             @third = 0
             @tthird = 0
-            @message = "Sorry, no matches were found in our database. Try adjusting your description. If you still can't find your flower, submit a request with a picture of your flower <a href='contact'>here</a>"
+            @message = "Sorry, no matches were found in our database. <br>Try adjusting your description or submit a request with a picture of your flower <a href='contact'>here</a>"
         end
-        
             
         
     end

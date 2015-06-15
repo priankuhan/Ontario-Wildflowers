@@ -4,10 +4,24 @@
       <strong>Flower Finder <i class='fa fa-search'></i> </strong>
     </p>
   </div>
+  
+  <div class="row">
+    <%= form_tag show_flower_path, :method => 'get' do %>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-9">
+          <%= text_field_tag :search, nil, class: "search-query form-control", placeholder: "Search by name" %>
+      </div>
+      <div class="col-lg-1">
+        <%= button_tag type: "submit", class: "btn btn-purple btn-block" do %>
+              <i class="fa fa-search"></i>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  
   <p>
     <h3><strong>Select the colour of your flower to begin</strong></h3><br>
   </p>
-
 
   <div class="row">
     <%= link_to find_path(colour: "red") do %>

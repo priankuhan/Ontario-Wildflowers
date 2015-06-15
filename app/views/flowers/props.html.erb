@@ -4,18 +4,22 @@
       <strong>Flower Finder <i class='fa fa-search'></i> </strong>
     </p>
   </div>
-  <h3><strong>Which shape does your flower most resemble?</strong></h3><br>
-  <div class="row">
+  <h3><strong>Which is the shape of your flower?</strong></h3><br>
     <% @categories.each do |category| %>
-      <div class="col-lg-4" >
-        <div class="panel panel-default">
+      <div class="row" >
+        <div class="panel panel-primary">
           <div class="panel-body text-center">
             <% label = "<span style='font-size:25px;'>"+category.titlecase+"</span>"%>
-            <%= link_to label.html_safe, show_flower_path(colour: params[:colour],prop: category), :class => "btn btn-block btn-default"  %>
-        </div>
+            <%flowers = Flower.where("colour='"+params[:colour].to_s+"' OR colour2='"+params[:colour].to_s+"' OR colour3='"+params[:colour].to_s+"'").where("prop1='"+category+"' OR prop2='"+category+"' OR prop3='"+category+"'")%>
+            <%= link_to label.html_safe, show_flower_path(colour: params[:colour],prop: category), :class => "btn btn-block btn-default"  %><br>
+            <%flowers[0,3].each do |flower| %>
+              <div class="col-lg-4">
+                <%= image_tag flower.images, id: "picture",  style: "max-height:220px" %>
+              </div>
+            <%end%>
+          </div>
         </div>
       </div>
     <%end%>
-  </div>
   
 </div>
