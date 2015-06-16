@@ -29,17 +29,11 @@ class FlowersController < ApplicationController
         end
         
         if @flowers.length > 1
-            @third = (@flowers.length/3.0).ceil
-            @tthird = @third*2
             @message = "Found "+@flowers.length.to_s+" flowers that match your description!"
         elsif @flowers.length == 1
-            @third = 1
-            @tthird = 1
             @message = "Found one flower that matches your description!"
         else
             @flowers = []
-            @third = 0
-            @tthird = 0
             @message = "Sorry, no matches were found in our database. <br>Try adjusting your description or submit a request with a picture of your flower <a href='contact'>here</a>"
         end
             
