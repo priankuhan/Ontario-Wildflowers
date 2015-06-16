@@ -31,11 +31,11 @@ class FlowersController < ApplicationController
         if @flowers.length > 1
             @third = (@flowers.length/3.0).ceil
             @tthird = @third*2
-            @message = "There are "+@flowers.length.to_s+" flowers that match your description!"
+            @message = "Found "+@flowers.length.to_s+" flowers that match your description!"
         elsif @flowers.length == 1
             @third = 1
             @tthird = 1
-            @message = "There is one flower that matches your description!"
+            @message = "Found one flower that matches your description!"
         else
             @flowers = []
             @third = 0

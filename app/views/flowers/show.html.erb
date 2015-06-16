@@ -7,19 +7,24 @@
   <div class="row">
     <h3><%=@message.html_safe%></h3><br>
   </div>
-  <div class="row">
-    <% @flowers.in_groups(3, false) do |ids| %>
-      <div class="col-lg-4" >
-        <% ids.each do |id| %>
-          <%flower = Flower.find(id) %>
-          <div class="panel panel-default">
-            <%= image_tag flower.images, id: "picture",  class: "img-responsive" %>
-            <h1 style="color:#FFFFFF"><%=flower.name%></h1>
-          </div>
-        <%end%>
-      </div>
-    <%end%>
+  <div id="fad">
+    <div class="row">
+      <% @flowers.in_groups(3, false) do |ids| %>
+        <div class="col-lg-4" >
+          <% ids.each do |id| %>
+            <%flower = Flower.find(id) %>
+            <div class="panel panel-default">
+              <%= image_tag flower.images, id: "picture",  class: "img-responsive" %>
+              <h1 style="color:#FFFFFF"><%=flower.name%></h1>
+            </div>
+          <%end%>
+        </div>
+      <%end%>
+    </div>
   </div>
   
-  
 </div>
+
+<script>
+$("#fad").delay(500).animate({"opacity": "1"}, 700);
+</script>

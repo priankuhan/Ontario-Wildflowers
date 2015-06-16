@@ -733,18 +733,6 @@ json = [
 		"scientific" : ""
 	}',
 	'{
-		"name" : "Buttercup",
-		"petals" : 5,
-		"prop1" : "",
-		"prop2" : "",
-		"prop3" : "",
-		"images" : "http://www.wildflowersofontario.ca/buttercup.jpg",
-		"colour" : "yellow",
-		"colour2" : "",
-		"colour3" : "",
-		"scientific" : ""
-	}',
-	'{
 		"name" : "Fringed Loosestrife",
 		"petals" : 5,
 		"prop1" : "",
@@ -1218,7 +1206,7 @@ json = [
 		"prop1" : "pea",
 		"prop2" : "",
 		"prop3" : "",
-		"images" : "http://www.fireflyforest.com/images/wildflowers/plants/Melilotus_off_400.jpg",
+		"images" : "http://minnesotaseasons.com/Plants/Large/Y/yellow_sweet_clover_03.jpg",
 		"colour" : "yellow",
 		"colour2" : "",
 		"colour3" : "",
@@ -1287,7 +1275,7 @@ json = [
 	'{
 		"name" : "Tansy",
 		"petals" : 0,
-		"prop1" : "rayless ",
+		"prop1" : "rayless",
 		"prop2" : "",
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/tansy2.jpg",
@@ -1299,7 +1287,7 @@ json = [
 	'{
 		"name" : "Pineappleweed",
 		"petals" : 0,
-		"prop1" : "rayless ",
+		"prop1" : "rayless",
 		"prop2" : "",
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/pineappleweed.jpg",
@@ -2188,7 +2176,7 @@ json = [
 		"name" : "Burdock",
 		"petals" : 0,
 		"prop1" : "other",
-		"prop2" : "",
+		"prop2" : "spiked",
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/burdock.jpg",
 		"colour" : "red",
@@ -2212,7 +2200,7 @@ json = [
 		"name" : "Canada Thistle",
 		"petals" : 0,
 		"prop1" : "other",
-		"prop2" : "",
+		"prop2" : "spiked",
 		"prop3" : "",
 		"images" : "http://oregonstate.edu/dept/nursery-weeds/feature_articles/thistles/ct_flower_750.jpg",
 		"colour" : "red",

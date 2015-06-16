@@ -4,22 +4,44 @@
       <strong>Flower Finder <i class='fa fa-search'></i> </strong>
     </p>
   </div>
-  <h3><strong>Which is the shape of your flower?</strong></h3><br>
+  <h3><strong>What is the shape of your flower?</strong></h3><br>
+  <div id="fad">
+        <div class="row" >
     <% @categories.each do |category| %>
-      <div class="row" >
-        <div class="panel panel-primary">
+      <div class="col-lg-4">
+        <div class="panel panel-default">
           <div class="panel-body text-center">
             <% label = "<span style='font-size:25px;'>"+category.titlecase+"</span>"%>
             <%flowers = Flower.where("colour='"+params[:colour].to_s+"' OR colour2='"+params[:colour].to_s+"' OR colour3='"+params[:colour].to_s+"'").where("prop1='"+category+"' OR prop2='"+category+"' OR prop3='"+category+"'")%>
-            <%= link_to label.html_safe, show_flower_path(colour: params[:colour],prop: category), :class => "btn btn-block btn-default"  %><br>
-            <%flowers[0,3].each do |flower| %>
-              <div class="col-lg-4">
-                <%= image_tag flower.images, id: "picture",  style: "max-height:220px" %>
-              </div>
-            <%end%>
+            <%= link_to label.html_safe, show_flower_path(colour: params[:colour],prop: category),id: category, :class => "btn btn-block btn-default"  %>
           </div>
         </div>
       </div>
     <%end%>
-  
+    </div>
+  </div>
 </div>
+
+<script>
+  var bell = '<img src="http://www.wildflowersofontario.ca/creepingbellflower3.jpg" class = "img-responsive" />'; 
+  var orchid = '<img src="http://ontfin.com/Word/wp-content/uploads/2008/06/showy_ladys_slipper.jpg" class = "img-responsive" />'; 
+  var pea = '<img src="http://www.wildflowersofontario.ca/birdfoot6.jpg" class = "img-responsive" />'; 
+  var daisy = '<img src="http://www.wildflowersofontario.ca/daisy2.jpg" class = "img-responsive" />'; 
+  var rayless = '<img src="http://www.wildflowersofontario.ca/tansy2.jpg" class = "img-responsive" />'; 
+  var lipped = '<img src="http://www.wildflowersofontario.ca/greaterlobelia7.jpg" class = "img-responsive" />'; 
+  var spiked = '<img src="hhttp://www.wildflowersofontario.ca/globethistle1.jpg" class = "img-responsive" />'; 
+  var clustered = '<img src="http://www.wildflowersofontario.ca/butterflyweed2.jpg" class = "img-responsive" />'; 
+  var hooded = '<img src="http://www.wildflowersofontario.ca/jackinthepulpit.jpg" class = "img-responsive" />'; 
+  $("#bell").popover({ title: "Bell Shaped Flower", content: bell, container: 'body', html:true, trigger: "hover" });
+  $("#orchid").popover({ title: "Orchid Shaped Flower", content: orchid, container: 'body', html:true, trigger: "hover" });
+  $("#pea").popover({ title: "Pea Shaped Flower", content: pea, container: 'body', html:true, trigger: "hover" });
+  $("#daisy").popover({ title: "Daisy Shaped Flower", content: daisy, container: 'body', html:true, trigger: "hover" });
+  $("#rayless").popover({ title: "Rayless Flower", content: rayless, container: 'body', html:true, trigger: "hover" });
+  $("#lipped").popover({ title: "Lipped Flower", content: lipped, container: 'body', html:true, trigger: "hover" });
+  $("#spiked").popover({ title: "Spiked Flower", content: spiked, container: 'body', html:true, trigger: "hover" });
+  $("#clustered").popover({ title: "Clustered Flower", content: clustered, container: 'body', html:true, trigger: "hover" });
+  $("#hooded").popover({ title: "Hooded Flower", content: hooded, container: 'body', html:true, trigger: "hover" });
+  
+  $("#fad").delay(200).animate({"opacity": "1"}, 700);
+
+</script>
