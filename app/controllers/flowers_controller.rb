@@ -21,7 +21,7 @@ class FlowersController < ApplicationController
         if params[:prop].blank? && params[:petals].present?
             @flowers = Flower.where("colour='"+params[:colour].to_s+"' OR colour2='"+params[:colour].to_s+"' OR colour3='"+params[:colour].to_s+"'").where(petals: params[:petals])
         elsif params[:search].present?
-            @flowers = Flower.where("name like ?", "%#{params[:search]}%")
+            @flowers = Flower.where("lower(name) like ?", "%#{params[:search].downcase}%")
         elsif params[:petals].blank? && params[:prop].blank?
             @flowers = Flower.where("colour='"+params[:colour].to_s+"' OR colour2='"+params[:colour].to_s+"' OR colour3='"+params[:colour].to_s+"'")
         else
