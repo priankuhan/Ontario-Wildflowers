@@ -30,9 +30,9 @@ json = [
 		"prop1" : "",
 		"prop2" : "",
 		"prop3" : "",
-		"images" : "http://www.jeffpippen.com/plants/bluets050406-2466facez.jpg",
-		"colour" : "white",
-		"colour2" : "blue",
+		"images" : "http://williambritten.com/wordpress/wp-content/uploads/2010/05/bluets-clingmans-019.jpg",
+		"colour" : "blue",
+		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
 	}',
@@ -68,7 +68,7 @@ json = [
 		"prop3" : "",
 		"images" : "http://www.toronto-wildlife.com/images/bindweed_field_1sh25_081409_640x480.jpg",
 		"colour" : "white",
-		"colour2" : "red",
+		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
 	}',
@@ -152,7 +152,7 @@ json = [
 		"prop3" : "",
 		"images" : "http://wiseacre-gardens.com/plants/wildflower/dames-rocket-lavender.jpg",
 		"colour" : "white",
-		"colour2" : "red",
+		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
 	}',
@@ -188,7 +188,7 @@ json = [
 		"prop3" : "",
 		"images" : "http://www.aphotoflora.com/images/malvaceae/malva_neglecta_dwarf_mallow_flower_15-08-06.jpg",
 		"colour" : "white",
-		"colour2" : "red",
+		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
 	}',
@@ -284,7 +284,7 @@ json = [
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/bouncingbet1.jpg",
 		"colour" : "white",
-		"colour2" : "red",
+		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
 	}',
@@ -308,7 +308,7 @@ json = [
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/muskmallow2.jpg",
 		"colour" : "white",
-		"colour2" : "red",
+		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
 	}',
@@ -392,8 +392,8 @@ json = [
 		"prop3" : "",
 		"images" : "http://upload.wikimedia.org/wikipedia/commons/9/9b/Hepatica_nobilis_plant.JPG",
 		"colour" : "white",
-		"colour2" : "blue",
-		"colour3" : "red",
+		"colour2" : "",
+		"colour3" : "",
 		"scientific" : ""
 	}',
 	'{
@@ -1400,7 +1400,7 @@ json = [
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/newenglandaster.jpg",
 		"colour" : "blue",
-		"colour2" : "red",
+		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
 	}',
@@ -1530,7 +1530,7 @@ json = [
 		"prop1" : "lipped",
 		"prop2" : "",
 		"prop3" : "",
-		"images" : "http://shop.sweetknowleaquatics.co.uk/WebRoot/Namesco/Shops/950007385/49A7/BA63/13DE/350B/B6D8/3EC1/CD18/06CB/mimulus_0020_ringens.JPG",
+		"images" : "http://upload.wikimedia.org/wikipedia/commons/d/da/Mimulus_ringens_(5156292183).jpg",
 		"colour" : "blue",
 		"colour2" : "",
 		"colour3" : "",
@@ -1843,7 +1843,7 @@ json = [
 		"prop2" : "",
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/gardenphlox1.jpg",
-		"colour" : "red",
+		"colour" : "white",
 		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
@@ -1927,7 +1927,7 @@ json = [
 		"prop2" : "",
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/falsedragonhead.jpg",
-		"colour" : "red",
+		"colour" : "white",
 		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
@@ -1999,7 +1999,7 @@ json = [
 		"prop2" : "",
 		"prop3" : "",
 		"images" : "http://www.mywildflowers.com/photos/2011/ph21.jpg",
-		"colour" : "red",
+		"colour" : "white",
 		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
@@ -2034,9 +2034,9 @@ json = [
 		"prop1" : "bell",
 		"prop2" : "",
 		"prop3" : "",
-		"images" : "http://www.ontariowildflower.com/images/dogbanefl.jpg",
+		"images" : "http://redrockcanyonopenspace.org/wp-content/uploads/2013/03/dogbane-large.jpg",
 		"colour" : "red",
-		"colour2" : "blue",
+		"colour2" : "white",
 		"colour3" : "",
 		"scientific" : ""
 	}',
@@ -2095,7 +2095,7 @@ json = [
 		"prop2" : "",
 		"prop3" : "",
 		"images" : "http://www.botany.wisc.edu/images/Orchids/full/epipactis_detail.jpg",
-		"colour" : "red",
+		"colour" : "white",
 		"colour2" : "green",
 		"colour3" : "",
 		"scientific" : ""
@@ -2143,7 +2143,7 @@ json = [
 		"prop2" : "",
 		"prop3" : "",
 		"images" : "https://florapittsburghensis.files.wordpress.com/2011/06/asclepias-syriaca-2011-06-23-zelienople-01.jpg",
-		"colour" : "red",
+		"colour" : "white",
 		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
@@ -2180,7 +2180,7 @@ json = [
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/burdock.jpg",
 		"colour" : "red",
-		"colour2" : "blue",
+		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
 	}',

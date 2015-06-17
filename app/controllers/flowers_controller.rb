@@ -14,7 +14,6 @@ class FlowersController < ApplicationController
         @categories << flowers.pluck(:prop3)
         @categories = @categories.flatten.uniq
         @categories.reject! { |c| c.blank? || c == "aquatic" }
-        
     end
     
     def show
@@ -34,7 +33,7 @@ class FlowersController < ApplicationController
             @message = "Found one flower that matches your description!"
         else
             @flowers = []
-            @message = "Sorry, no matches were found in our database. <br>Try adjusting your description or submit a request with a picture of your flower <a href='contact'>here</a>"
+            @message = "Sorry, no matches were found in our database. <br>"
         end
             
         
