@@ -23,49 +23,53 @@
     <h3><strong>Select the colour of your wildflower</strong></h3>
   </p>
   <div id="fad">
-    <div class="row">
-      <%= link_to find_path(colour: "red") do %>
-        <span>
-          <div class="col-lg-2 circle" id="red" style="background-color:#FF4C4C;margin-right:20px">
-             &nbsp; 
-          </div>
-        </span>
-      <% end %>
-      <%= link_to find_path(colour: "orange") do %>
-        <span>
-          <div class="col-lg-2 circle" style="background-color:#FFB732;margin-right:20px">
-             &nbsp; 
-          </div>
-        </span>
-      <% end %>
-      <%= link_to find_path(colour: "yellow") do %>
-        <span>
-          <div class="col-lg-2 circle" style="background-color:#FFFF32;margin-right:20px">
-             &nbsp; 
-          </div>
-        </span>
-      <% end %>
-      <%= link_to find_path(colour: "green") do %>
-        <span>
-          <div class="col-lg-2 circle" style="background-color:#46A346;margin-right:20px">
-             &nbsp; 
-          </div>
-        </span>
-      <% end %>
-      <%= link_to find_path(colour: "blue") do %>
-        <span>
-          <div class="col-lg-2 circle" style="background-color:#4B0082;margin-right:20px">
-             &nbsp; 
-          </div>
-        </span>
-      <% end %>
-      <%= link_to find_path(colour: "white") do %>
-        <span>
-          <div class="col-lg-2 circle" style="background-color:#ffffff;border-style:solid;border-color:#000000">
-             &nbsp; 
-          </div>
-        </span>
-      <% end %>
+    <div class="col-sm-6">
+
+        <%= link_to find_path(colour: "red") do %>
+          <span>
+            <div class="col-lg-2 circle" id="red" style="background-color:#FF4C4C;margin-right:20px;margin-bottom:10px">
+               &nbsp; 
+            </div>
+          </span>
+        <% end %>
+        <%= link_to find_path(colour: "orange") do %>
+          <span>
+            <div class="col-lg-2 circle" style="background-color:#FFB732;margin-right:20px;margin-bottom:10px">
+               &nbsp; 
+            </div>
+          </span>
+        <% end %>
+        <%= link_to find_path(colour: "yellow") do %>
+          <span>
+            <div class="col-lg-2 circle" style="background-color:#FFFF32">
+               &nbsp; 
+            </div>
+          </span>
+        <% end %>
+
+    </div>
+    <div class="col-sm-6">
+        <%= link_to find_path(colour: "green") do %>
+          <span>
+            <div class="col-lg-2 circle" style="background-color:#46A346;margin-right:20px;margin-bottom:10px">
+               &nbsp; 
+            </div>
+          </span>
+        <% end %>
+        <%= link_to find_path(colour: "blue") do %>
+          <span>
+            <div class="col-lg-2 circle" style="background-color:#4B0082;margin-right:20px;margin-bottom:10px">
+               &nbsp; 
+            </div>
+          </span>
+        <% end %>
+        <%= link_to find_path(colour: "white") do %>
+          <span>
+            <div class="col-lg-2 circle" style="background-color:#ffffff;border-style:solid;border-color:#000000">
+               &nbsp; 
+            </div>
+          </span>
+        <% end %>
     </div>
   </div>
 </div>
