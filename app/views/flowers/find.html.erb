@@ -4,58 +4,89 @@
       <strong>Wildflower Finder <i class='fa fa-leaf'></i> </strong>
     </p>
   </div>
-  <p>
-    <h3><strong>How many petals does it have?</strong></h3><br>
-  </p>
-
-<div id="fad">
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-body text-center">
-          <%= link_to "<span style='font-size:25px;'>3 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "3"), :class => "btn btn-block btn-default"  %>
+  <div id="fad text-left">
+    <p>
+      <h3><strong>Typical Flowers</strong></h3>Fairly flat and symmetrical flowers with petals attached to a central point.
+    </p>
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="panel panel-default text-center">
+          <%= image_tag "http://wiseacre-gardens.com/plants/wildflower/dames-rocket-lavender.jpg" , id: "picture",  class: "img-responsive" %>
+          <div style="color:#FFFFFF">Dame's Rocket</div>
+        </div>
+      </div>
+      <div class="col-lg-7" style="margin-top:-10px">
+        <h3>How many petals does your flower have?</h3><br>
+        <div class="row">
+          <div class="col-lg-6" >
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                <%= link_to "<span style='font-size:25px;'>3 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "3"), :class => "btn btn-block btn-default"  %>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                  <%= link_to "<span style='font-size:25px;'>5 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "5"), :class => "btn btn-block btn-default"  %>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                  <%= link_to "<span style='font-size:25px;'>4 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "4"), :class => "btn btn-block btn-default"  %>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                  <%= link_to "<span style='font-size:25px;'>6 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "6"), :class => "btn btn-block btn-default"  %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                  <%= link_to "<span style='font-size:25px;'>More than 6 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "10"), :class => "btn btn-block btn-default"  %>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-body text-center">
-            <%= link_to "<span style='font-size:25px;'>4 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "4"), :class => "btn btn-block btn-default"  %>
+    <h1><strong>OR</strong></h1>
+    <br><br>
+    <div class="row">
+      <div class="col-lg-5">
+        <h3><strong>Irregularly Shaped Flowers</strong></h3><br>
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+              <%= link_to "<span style='font-size:25px;'>See Irregular Flowers</span>".html_safe, aquatic_path(colour: params[:colour]), :class => "btn btn-block btn-default"  %>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-body text-center">
-            <%= link_to "<span style='font-size:25px;'>5 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "5"), :class => "btn btn-block btn-default"  %>
+      <div class="col-lg-7" style="padding-top:5px">
+        <div class="col-lg-4">
+          <div class="panel panel-default text-center">
+            <%= image_tag "http://www.toronto-wildlife.com/images/bindweed_field_1sh25_081409_640x480.jpg" , id: "picture",  class: "img-responsive"%>
+            <div style="color:#FFFFFF">Bindweed</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="panel panel-default text-center">
+            <%= image_tag "http://www.wildflowersofontario.ca/blueflag.jpg" , id: "picture",  class: "img-responsive" %>
+            <div style="color:#FFFFFF">Blue Flag</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="panel panel-default text-center">
+            <%= image_tag "http://www.wildflowersofontario.ca/everlastingpea1.jpg" , id: "picture",  class: "img-responsive" %>
+            <div style="color:#FFFFFF">Everlasting Pea</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-body text-center">
-            <%= link_to "<span style='font-size:25px;'>6 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "6"), :class => "btn btn-block btn-default"  %>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-body text-center">
-            <%= link_to "<span style='font-size:25px;'>More than 6 Petals</span>".html_safe, show_flower_path(colour: params[:colour],petals: "10"), :class => "btn btn-block btn-default"  %>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-body text-center">
-            <%= link_to "<span style='font-size:25px;'>Oddly Shaped</span>".html_safe, aquatic_path(colour: params[:colour]), :class => "btn btn-block btn-default"  %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 
 <script>

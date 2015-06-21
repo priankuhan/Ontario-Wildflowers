@@ -150,8 +150,8 @@ json = [
 		"prop1" : "",
 		"prop2" : "",
 		"prop3" : "",
-		"images" : "http://wiseacre-gardens.com/plants/wildflower/dames-rocket-lavender.jpg",
-		"colour" : "white",
+		"images" : "http://wiseacre-gardens.com/plants/wildflower/dames-rocket-purple.jpg",
+		"colour" : "blue",
 		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
@@ -1170,7 +1170,7 @@ json = [
 		"prop1" : "orchid",
 		"prop2" : "",
 		"prop3" : "",
-		"images" : "http://www.ontariowildflower.com/images/small_yellow_lady\'s-slipper_flower.jpg",
+		"images" : "http://williambritten.com/wordpress/wp-content/uploads/2011/04/yellow-lady-437.jpg",
 		"colour" : "yellow",
 		"colour2" : "",
 		"colour3" : "",
@@ -1417,7 +1417,7 @@ json = [
 		"scientific" : ""
 	}',
 	'{
-		"name" : "Blueflag",
+		"name" : "Blue Flag",
 		"petals" : 0,
 		"prop1" : "aquatic",
 		"prop2" : "orchid",
@@ -1694,7 +1694,7 @@ json = [
 	}',
 	'{
 		"name" : "Day Lily",
-		"petals" : 0,
+		"petals" : 6,
 		"prop1" : "bell",
 		"prop2" : "",
 		"prop3" : "",
@@ -1856,7 +1856,7 @@ json = [
 		"prop3" : "",
 		"images" : "http://www.wildflowersofontario.ca/pitcherplant3sss.jpg",
 		"colour" : "red",
-		"colour2" : "green",
+		"colour2" : "",
 		"colour3" : "",
 		"scientific" : ""
 	}',
