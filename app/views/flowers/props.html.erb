@@ -9,7 +9,7 @@
   <div id="fad">
         <div class="row" >
     <% @categories.each do |category| %>
-      <div class="col-lg-4">
+      <div class="col-xs-4">
         <div class="panel panel-default">
           <div class="panel-body text-center">
             <% label = "<span style='font-size:25px;'>"+category.titlecase+"</span>"%>
@@ -33,15 +33,15 @@
   var spiked = '<img src="http://www.wildflowersofontario.ca/globethistle1.jpg" class = "img-responsive" />'; 
   var clustered = '<img src="http://www.wildflowersofontario.ca/butterflyweed2.jpg" class = "img-responsive" />'; 
   var hooded = '<img src="http://www.wildflowersofontario.ca/jackinthepulpit.jpg" class = "img-responsive" />'; 
-  $("#bell").popover({ title: "Bell Shaped Flower", content: bell, container: 'body', html:true, trigger: "hover" });
-  $("#orchid").popover({ title: "Orchid Shaped Flower", content: orchid, container: 'body', html:true, trigger: "hover" });
-  $("#pea").popover({ title: "Pea Shaped Flower", content: pea, container: 'body', html:true, trigger: "hover" });
-  $("#daisy").popover({ title: "Daisy Shaped Flower", content: daisy, container: 'body', html:true, trigger: "hover" });
-  $("#rayless").popover({ title: "Rayless Flower", content: rayless, container: 'body', html:true, trigger: "hover" });
-  $("#lipped").popover({ title: "Lipped Flower", content: lipped, container: 'body', html:true, trigger: "hover" });
-  $("#spiked").popover({ title: "Spiked Flower", content: spiked, container: 'body', html:true, trigger: "hover" });
-  $("#clustered").popover({ title: "Clustered Flower", content: clustered, container: 'body', html:true, trigger: "hover" });
-  $("#hooded").popover({ title: "Hooded Flower", content: hooded, container: 'body', html:true, trigger: "hover" });
+  $("#bell").popover({ title: "Bell Shaped Flower", content: bell, container: 'body', html:true, placement: "bottom", trigger: "hover" });
+  $("#orchid").popover({ title: "Orchid Shaped Flower", content: orchid, container: 'body', html:true, placement: "bottom", trigger: "hover" });
+  $("#pea").popover({ title: "Pea Shaped Flower", content: pea, container: 'body', html:true, placement: "bottom", trigger: "hover" });
+  $("#daisy").popover({ title: "Daisy Shaped Flower", content: daisy, container: 'body', html:true, placement: "bottom", trigger: "hover" });
+  $("#rayless").popover({ title: "Rayless Flower", content: rayless, container: 'body', html:true, placement: "bottom", trigger: "hover" });
+  $("#lipped").popover({ title: "Lipped Flower", content: lipped, container: 'body', html:true, placement: "bottom", trigger: "hover" });
+  $("#spiked").popover({ title: "Spiked Flower", content: spiked, container: 'body', html:true, placement: "bottom", trigger: "hover" });
+  $("#clustered").popover({ title: "Clustered Flower", content: clustered, container: 'body', html:true, placement: "bottom", trigger: "hover" });
+  $("#hooded").popover({ title: "Hooded Flower", content: hooded, container: 'body', html:true, placement: "bottom", trigger: "hover" });
   
   $("#fad").delay(200).animate({"opacity": "1"}, 700);
 

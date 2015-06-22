@@ -7,11 +7,11 @@
 
   <div class="row">
     <%= form_tag show_flower_path, :method => 'get' do %>
-      <div class="col-lg-1"></div>
-      <div class="col-lg-9">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-9">
           <%= text_field_tag :search, nil, class: "search-query form-control", placeholder: "Search by name" %>
       </div>
-      <div class="col-lg-1">
+      <div class="col-xs-1">
         <%= button_tag type: "submit", class: "btn btn-purple btn-block" do %>
               <i class="fa fa-search"></i>
         <% end %>
@@ -23,7 +23,7 @@
     <h3><strong>Select the colour of your wildflower</strong></h3>
   </p>
   <div id="fad">
-    <div class="col-sm-6">
+    <div class="col-xs-6">
 
         <%= link_to find_path(colour: "red") do %>
           <span>
@@ -48,7 +48,7 @@
         <% end %>
 
     </div>
-    <div class="col-sm-6">
+    <div class="col-xs-6">
         <%= link_to find_path(colour: "green") do %>
           <span>
             <div class="col-lg-2 circle" style="background-color:#46A346;margin-right:20px;margin-bottom:10px">
